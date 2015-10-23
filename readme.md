@@ -15,7 +15,7 @@ Uma aplicação de exemplo pro Bootcamp do Startup Weekend João Pessoa 2015
 
 Crie um arquivo de env:
 
-    cp env.sample .env
+    cp .env.sample .env
     
 Inicie os containers do Docker:
 
