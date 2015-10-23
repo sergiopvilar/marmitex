@@ -1,0 +1,13 @@
+{
+  "name": "marmitex",
+  "version": "0.0.0",
+  "homepage": "https://github.com/sergiovilar/marmitex",
+  "authors": [
+    "Sergio Vilar <sergiovilar.r@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true
+}
