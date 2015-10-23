@@ -6,6 +6,7 @@ Uma aplicação de exemplo pro Bootcamp do Startup Weekend João Pessoa 2015
 
  - Lumen Framework
  - Suporte ao Docker
+ - Suporte ao Heroku
  - Cartalyst Sentinel
  - Roles de Admin e Cliente
  - Middleware de Admin
@@ -23,3 +24,14 @@ Inicie os containers do Docker:
 Rode as migrations e seeds:
 
     docker-compose run artisan migrate --seed
+    
+    
+### Criando o projeto no Heroku
+
+É necessário usar um buildpack diferente, então para criar o projeto rode:
+
+    heroku create --buildpack https://github.com/heroku/heroku-buildpack-multi
+
+Caso você já tenha o projeto criado:
+
+    heroku config:set BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-multi
