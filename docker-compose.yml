@@ -1,0 +1,32 @@
+php:
+  image: dylanlindgren/docker-laravel-phpfpm
+  links:
+    - db:db
+  volumes:
+    - .:/data/www
+    - ./storage/logs:/data/logs/
+
+web:
+  image: dylanlindgren/docker-laravel-nginx
+  volumes_from:
+    - php
+  links:
+    - php:fpm
+  ports:
+    - "80:80"
+
+artisan:
+  image: dylanlindgren/docker-laravel-artisan
+  command: migrate
+  links:
+      - db:db
+  volumes:
+      - .:/data/www
+
+db:
+  image: mariadb
+  ports:
+    - "3306:3306"
+  environment:
+      MYSQL_ROOT_PASSWORD: docker
+      MYSQL_DATABASE: laravel
