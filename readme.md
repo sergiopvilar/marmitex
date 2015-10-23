@@ -31,6 +31,10 @@ Rode as migrations e seeds:
 É necessário usar um buildpack diferente, então para criar o projeto rode:
 
     heroku create --buildpack https://github.com/heroku/heroku-buildpack-multi
+    
+Adicione o MySQL a seu projeto:
+
+    heroku addons:add cleardb
 
 Caso você já tenha o projeto criado:
 
