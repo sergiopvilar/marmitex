@@ -28,6 +28,9 @@ Rode as migrations e seeds:
 
     docker-compose run artisan migrate --seed
 
+Compilando os asssets:
+
+    gulp build
 
 ### Criando o projeto no Heroku
 
