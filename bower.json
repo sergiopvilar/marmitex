@@ -9,5 +9,8 @@
   "main": "",
   "moduleType": [],
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5"
+  }
 }
