@@ -8,7 +8,8 @@
         "php": ">=5.5.9",
         "laravel/lumen-framework": "5.1.*",
         "vlucas/phpdotenv": "~1.0",
-        "optimus/sentinel-lumen": "^0.1.0"
+        "optimus/sentinel-lumen": "^0.1.0",
+        "sergiovilar/laravel-crud": "^0.1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.0",
@@ -20,7 +21,8 @@
             "App\\": "app/"
         },
         "classmap": [
-            "database/"
+            "database/",
+            "app/Model"
         ]
     },
     "autoload-dev": {
