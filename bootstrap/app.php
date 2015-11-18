@@ -99,6 +99,7 @@ $app->register('Optimus\Sentinel\SentinelServiceProvider');
 */
 
 $app->configure('sentinel');
+new AdminBootstrap('/app/Admin', $app);
 
 $app->group(['namespace' => 'App\Http\Controllers'], function ($app) {
     require __DIR__.'/../app/Http/routes.php';
